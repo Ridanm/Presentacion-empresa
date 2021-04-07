@@ -7,8 +7,10 @@
     --gray-1: #F7D9D990;
     --black: #1A1B1F;
     --black-1: #30353B;
-    --blue: rgb(20, 20, 255);
-    --blue-1: rgba(56, 56, 241, .5);
+    --blue: rgba(20, 20, 255, 0.39);
+    --blue-1: rgba(28, 255, 7, 0.5);
+    --green: rgb(42, 194, 47);
+    --red: rgb(255, 51, 51);
     --shadow: 0 8px 8px;
     --color-shadow: #00000033;
 }
@@ -34,7 +36,6 @@
 
 .container--modifier{
     width: 70%;
-    background: #0d3bf5;
 }
 
 .hero{
@@ -74,7 +75,9 @@
     font-weight: 500;
 }
 
-.point{
+
+
+.point, .logo-active{
     color: var(--gold);
 }
 
@@ -116,10 +119,105 @@
 .cta{
     padding: 20px 30px;
     display: inline-block;
-    background: linear-gradient(180deg, var(--blue-1) 0%, var(--gold) 100%);
+    background: linear-gradient(180deg, var(--red) 0%, var(--gold) 100%);
     text-decoration: none;
     font-weight: 500;
-    color: rgb(228, 225, 225);
-    border-radius: 4px;
+    color: rgb(46, 16, 16);
+    border-radius: 10px;
     box-shadow: var(--shadow) var(--color-shadow);
+}
+
+/*servicios*/
+.services{
+    background: #a5a79e;
+}
+
+.subtitle{
+    font-size: 42px;
+}
+
+.subtitle--modifier{
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.copy-section{
+    color: var(--black-1);
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.copy-section--modifier{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cards{
+    width: calc(95% / 3);
+    padding: 20px;
+    background: #c1c7ac;
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
+    margin-bottom: 50px ;
+    box-shadow: 0 0 10px;
+    text-align: left;
+}
+
+.card-img{
+    width: 98%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-text{
+    width: 95%;
+    margin-left: 0 auto;
+}
+
+.card-list{
+    color: var(--black-1);
+    font-weight: 700;
+    margin: 25px 0 12px;
+    font-size: 20px;
+}
+
+.card-title{
+    font-size: 30px;
+    font-weight: 600;
+    color:rgb(97, 139, 5);
+    margin-bottom: 8px;
+}
+
+.card-copy{
+    color: rgb(7, 7, 7);
+    margin-bottom: 20px;
+}
+
+.card-button{
+    display: block;
+    background: linear-gradient(180deg, var(--red) 0%, var(--gold) 100%);
+    border-radius: 10px;
+    text-decoration: none;
+    width: 100%;
+    color: var(--black-1);
+    font-weight: 700;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.card-date{
+    color: rgb(61, 82, 14);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
